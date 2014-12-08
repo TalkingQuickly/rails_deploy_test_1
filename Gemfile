@@ -39,10 +39,12 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'unicorn', '~> 4.8.3'
+gem 'sidekiq'
 group :development do
   gem 'capistrano', '~> 3.2.1'
   gem 'capistrano-rails', '~> 1.1.0'
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv', "~> 2.0"
   gem 'capistrano-cookbook', require: false
+  gem 'capistrano-sidekiq'
 end
